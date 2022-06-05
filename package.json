@@ -4,6 +4,9 @@
   "description": "Replace this with a description of the project",
   "main": "prod/index.js",
   "scripts": {
+    "build": "tsc",
+    "lint": "eslint src --max-warnings 0",
+    "start": "node prod/index.js",
     "test": "echo 'no tests yet'"
   },
   "repository": {
