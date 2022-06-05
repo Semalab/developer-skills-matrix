@@ -1,0 +1,73 @@
+{
+  "env": {
+    "es2020": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "plugin:jsdoc/recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "jsdoc", "import"],
+  "rules": {
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "double", { "allowTemplateLiterals": true }],
+    "semi": ["error", "always"],
+    "prefer-const": "error",
+    "eqeqeq": ["error", "always"],
+    "curly": ["error"],
+    "require-atomic-updates": ["error"],
+    "no-var": ["error"],
+    "camelcase": ["error"],
+    "init-declarations": ["error", "always"],
+    "require-await": ["error"],
+    "no-param-reassign": ["error"],
+    "jsdoc/require-jsdoc": [
+      "error",
+      {
+        "require": {
+          "ArrowFunctionExpression": true,
+          "ClassDeclaration": true,
+          "ClassExpression": true,
+          "FunctionDeclaration": true,
+          "FunctionExpression": true,
+          "MethodDefinition": true
+        },
+        "publicOnly": true
+      }
+    ],
+    "jsdoc/require-description-complete-sentence": "error",
+    "import/first": "error",
+    "import/exports-last": "error",
+    "import/newline-after-import": "error",
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+          "object",
+          "type",
+          "unknown"
+        ],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ]
+  }
+}

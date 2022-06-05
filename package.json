@@ -1,0 +1,30 @@
+{
+  "name": "project-name-here",
+  "version": "0.0.0",
+  "description": "Replace this with a description of the project",
+  "main": "prod/index.js",
+  "scripts": {
+    "test": "echo 'no tests yet'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Semalab/template.git"
+  },
+  "author": "Sema Software",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Semalab/template/issues"
+  },
+  "homepage": "https://github.com/Semalab/template#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsdoc": "^39.3.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.2",
+    "typescript": "^4.7.2"
+  }
+}
