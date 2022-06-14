@@ -1,0 +1,41 @@
+name: Sync Rubric Across Files
+
+on: push
+
+jobs:
+  csv2json:
+    name: Sync CSV to JSON
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: |
+          npx csvtojson rubric/rubric.csv > rubric/rubric.json
+  csv2md:
+    needs: csv2json
+    name: Sync CSV to Markdown
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
+      - run: |
+          npx csv2md < rubric/rubric.csv > rubric/rubric.md
+  prettier:
+    needs: csv2md
+    name: Format generated files
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
+      - run: |
+          npx prettier --write rubric --config .prettierrc
+  git_commit:
+    needs: prettier
+    name: Commit files to repository
+    runs-on: ubuntu-latest
+    steps:
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "chore(sync): rubric files"
