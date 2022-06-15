@@ -1,0 +1,21 @@
+name: Feature request
+description: Suggest an idea for this project
+title: "[FEAT] - "
+labels: ["🚦 status: awaiting triage"]
+assignees: "nhcarrigan"
+body:
+  - type: markdown
+    attributes:
+      value: "# Feature request"
+  - type: textarea
+    id: feature
+    attributes:
+      label: What feature would you like to see?
+      description: Be as detailed as possible here. What would you like this application to do? How should you, as a user, interact with this feature?
+  - type: textarea
+    id: extrainfo
+    attributes:
+      label: Additional information
+      description: Is there anything else we should know about this feature?
+    validations:
+      required: false
