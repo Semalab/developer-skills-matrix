@@ -1,0 +1,23 @@
+name: Chore
+description: For requesting chores, such as cleaning up code.
+title: "[CHORE] - "
+labels: ["🚦 status: awaiting triage"]
+assignees: nhcarrigan
+body:
+  - type: markdown
+    attributes:
+      value: "# Chore request"
+  - type: textarea
+    id: description
+    attributes:
+      label: What work needs to be performed?
+      description: Provide a clear and concise explanation of the work to be performed.
+    validations:
+      required: true
+  - type: textarea
+    id: extrainfo
+    attributes:
+      label: Additional information
+      description: Is there anything else we should know about this chore?
+    validations:
+      required: false

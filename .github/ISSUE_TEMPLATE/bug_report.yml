@@ -1,0 +1,40 @@
+name: Bug report
+description: Create a report to help us address an error.
+title: "[BUG] - "
+labels: ["🚦 status: awaiting triage"]
+assignees: nhcarrigan
+body:
+  - type: markdown
+    attributes:
+      value: '# Bug report'
+  - type: textarea
+    id: bugdescription
+    attributes:
+      label: What bug did you encounter?
+      description: |
+        Please provide a clear description of the bug.
+        
+        Include the steps you took to cause the bug, and an explanation of what occurred.
+    validations:
+      required: true
+  - type: textarea
+    id: behaviour
+    attributes:
+      label: What did you expect to happen?
+      description: What did you expect to happen instead of the current behaviour?
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Attach any relevant screenshots here.
+    validations:
+      required: false
+  - type: textarea
+    id: extrainformation
+    attributes:
+      label: Additional information
+      description: Is there anything else we should know about this bug?
+    validations:
+      required: false
