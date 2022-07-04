@@ -1,7 +1,7 @@
 {
-  "name": "developer-rubric",
+  "name": "developer-skills-matrix",
   "version": "0.0.0",
-  "description": "Sema's Developer Rubric, a self-assessment tool you can use to measure your current place in your development journey.",
+  "description": "Sema's Developer Skills Matrix, a self-assessment tool you can use to measure your current place in your development journey.",
   "main": "prod/index.js",
   "scripts": {
     "build": "tsc",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Semalab/developer-rubric.git"
+    "url": "git+https://github.com/Semalab/developer-skills-matrix.git"
   },
   "author": "Sema Software",
   "license": "AGPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/Semalab/developer-rubric/issues"
+    "url": "https://github.com/Semalab/developer-skills-matrix/issues"
   },
-  "homepage": "https://github.com/Semalab/developer-rubric#readme",
+  "homepage": "https://github.com/Semalab/developer-skills-matrix#readme",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.27.0",
     "@typescript-eslint/parser": "^5.27.0",
