@@ -20,7 +20,7 @@
       "Beginner": "Have not learned how to handle constructive feedback professionally. Pull Request comments are low value.",
       "Advanced Beginner": "Accepts constructive feedback calmly but may need multiple iterations to implement the technical solution. Can catch obvious errors in PRs but may be hesitant to challenge or provide actionable suggestions.",
       "Intermediate": "Accepts constructive feedback well and can implement it quickly in and out of code reviews. Provides quality guidance to Advanced Beginners.",
-      "Advanced": "Accepts constructive feedback with grace and acts on it when appropriate. Provides context-appropriate and actionable feedback to develop ers of all levels. Recognizes their own biases and actively works to correct them. Capable of seeing bugs through reading code in PRs before even pulling down the branch.",
+      "Advanced": "Accepts constructive feedback with grace and acts on it when appropriate. Provides context-appropriate and actionable feedback to developers of all levels. Recognizes their own biases and actively works to correct them. Capable of seeing bugs through reading code in PRs before even pulling down the branch.",
       "Expert": "Models a supportive and productive feedback culture. Accepts constructive feedback with grace and acts on it when appropriate. Proactively reaches out for more feedback in areas of lower skill or where previous mistakes were made calling out hotspots for reviewers to focus on.\r"
     },
     "Requirements": {
